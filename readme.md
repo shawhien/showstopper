@@ -3,7 +3,7 @@
 #Technology used: This app features Javascript and EJS for the front end, and SQL/Sequelize for the back end. It also utlizes the Last.fm and Songkick APIs to track artists/add them to your favorites, let you know if they are on tour or not, and give you a list of related artists when you add them to your favorites for you to check out.
 
 
-#MVP The MVP for Showstopper includes the following:
+#MVP:
 
 - Authentication - sign up, login, and logout
 - Utilize 2 different APIs (Last.fm and Songkick)
