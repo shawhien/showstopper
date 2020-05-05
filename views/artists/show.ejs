@@ -1,0 +1,56 @@
+<div class="show-div">
+
+<h1><%=results.artist.name%></h1>
+
+<img src="<%= results.artist.image[1]["#text"]%>">
+
+<p><%= results.artist.bio.summary%></p>
+
+<a href="/artists/<%=artist.id%>/toptracks">Top Tracks</a>
+
+<h3>Song Search:</h3>
+
+<form class="credentials-form" method="GET" action="/artists/<%=artist.id%>/songsearch">
+    <input hidden type="text" name="artistId" value="<%= artist.id%>">
+    <input type="text" name="name" id="query">
+    <input type="submit" id="search-button">
+
+</form>
+
+
+
+<% if (results.artist.ontour == 1) { %>
+    
+    <p><%= results.artist.name%> is on tour!</p>
+    <%skResults.resultsPage.results.event.forEach(e => {%>
+    <span class="concert-span"> 
+        <p><%= e.displayName%></p>
+        <a href="<%= e.uri%>">Buy tickets!</a>
+        <p><%=e.venue.metroArea.displayName%></p>
+    </span>
+    <%})%>
+
+    
+<%} else { %>
+<p><%= results.artist.name%> is not currently on tour. Check back soon!</p>
+<% } %>
+
+
+<h3>Related Artists:</h3>
+
+<ul>
+
+    <% results.artist.similar.artist.forEach(a => { %>
+
+    <li>
+    <%= a.name %>    
+    </li>
+
+    <% }) %>
+
+</ul>
+
+
+
+</div>
+

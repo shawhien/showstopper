@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+
+}
+
+
+nav {
+    background-color: black;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    margin: 0;
+    display: inline;
+    padding-left: 0px;  
+}
+
+nav ul li {
+    display: inline;
+    padding: 5px 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: chartreuse;
+}
+
+.credentials-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+    width: 50vw;
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 25px;
+    padding: 2%;
+    background-image: linear-gradient(to bottom right, grey,black);
+}
+
+.credentials-form input {
+    max-width: 50%;
+    margin: 10px 0px;
+    padding: 1%;
+
+}
+
+.credentials-form input[type=submit] {
+    max-width: 75px;
+    background-color: white;
+}
+
+.error-box {
+	background-color: pink;
+	color: red;
+	font-weight: bold;
+	padding: 30px 50px;
+}
+
+.success-box {
+    background-color: lightgreen;
+    color: green;
+    font-weight: bold;
+    padding: 30px 50px;
+}
+
+.container {
+	margin: 0 15%;
+	padding-top: 20px;
+	height: 100vh; 
+}
+
+h1 {
+	margin-top: 0;
+	text-align: center;
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+
+}
+
+.show-div {
+    text-align: center;
+    margin-bottom: 200px;
+
+}
+.show-div ul li {
+    text-align: center;
+    list-style-type: none;
+    font-size: 36px;
+}
+
+.show-div a {
+    color: black;
+}
+
+.show-div a:visited {
+    color: black;
+}
+
+.show-div a:hover {
+    cursor: pointer;
+}
+
+.container {
+    margin-bottom: 200px;
+}
+
+#home-page {
+
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    width: auto;
+    
+}
+
+.well {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom right, grey,black);
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 10px 5px 5px black;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 150px;
+}
+
+footer {
+ background-color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
